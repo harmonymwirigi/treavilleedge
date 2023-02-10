@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo img {
-  max-height:40px;
+  max-height:80px;
 }
 
 @media (max-width: 991px) {
@@ -398,7 +398,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #aa0000;
+  background: #353535;
   box-shadow: 0 8px 28px rgba(255, 99, 120, 0.45);
 }
 

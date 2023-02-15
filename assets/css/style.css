@@ -464,7 +464,10 @@ height: 80px;
 
 
 }
-
+@media (max-width: 991px) {
+  #hero .btn-get-started {
+   height: 50px;
+  } }
 @media (max-width: 991px) {
   #hero {
     height: 100vh;
@@ -1460,7 +1463,7 @@ height: 48px;
 .card {
   display: flex;
   flex-direction: column;
-  height: 320px;
+  height: 340px;
   box-shadow: 0px 0px 10px rgba(58, 0, 0, 0.644);
 }
 .card-image {

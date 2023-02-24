@@ -251,3 +251,112 @@
 
       </div>
     </section><!-- End Team Section -->
+
+
+
+
+    
+     <div class="form-group">
+			<label for="full-name">Name of Client (Full Name) *</label>
+			<input type="text" id="full-name" name="full-name" placeholder="Enter full name" required>
+			<div class="error-message">Please enter your full name.</div>
+		</div>
+		<div class="form-group">
+			<label for="company-name">Company Name *</label>
+			<input type="text" id="company-name" name="company-name" placeholder="Enter company name" required>
+			<div class="error-message">Please enter your company name.</div>
+		</div>
+		<div class="form-group">
+			<label for="email">Email Address *</label>
+			<input type="text" id="email" name="email" placeholder="Enter email address" required>
+			<div class="error-message">Please enter a valid email address.</div>
+		</div>
+		<div class="form-group">
+			<label for="mobile-number">Mobile Number *</label>
+			<input type="text" id="mobile-number" name="mobile-number" placeholder="Enter mobile number" required>
+			<div class="error-message">Please enter your mobile number.</div>
+		</div>
+		<div class="form-group">
+			<label for="alt-number">Alternative Number</label>
+			<input type="text" id="alt-number" name="alt-number" placeholder="Enter alternative number">
+		</div>
+		<div class="form-group">
+			<label for="pickup-location">Pick Up Location &amp; City *</label>
+			<input type="text" id="pickup-location" name="pickup-location" placeholder="Enter pick up location &amp; city" required>
+			<div class="error-message">Please enter pick up location &amp; city.</div>
+		</div>
+		<div class="form-group">
+			<label for="delivery-destination">Delivery Destination &amp; City *</label>
+			<input type="text" id="delivery-destination" name="delivery-destination" placeholder="Enter delivery destination &amp; city" required>
+			<div class="error-message">Please Enter delivery destination</div>
+      </div>
+		<div class="form-group">
+		<label for="vehicle-type">Vehicle Type *</label>
+	<select id="vehicle-type" name="vehicle-type" required>
+  <option value="" disabled selected>Select Vehicle Type</option>
+  <option value="motor-bike">Motor Bike</option>
+  <option value="van">Van</option>
+  <option value="pickup">PickUp</option>
+  <option value="truck-3t">Truck 3T</option>
+  <option value="truck-5t">Truck 5T</option>
+  <option value="truck-7t">Truck 7T</option>
+  <option value="truck-10t">Truck 10T</option>
+  <option value="truck-15t">Truck 15T</option>
+  <option value="trailer-28t">Trailer 28T</option>
+  <option value="flat-bed">Flat Bed</option>
+  <option value="tour-van">Tour Van</option>
+  <option value="tour-landcruiser">Tour Landcruiser</option>
+  <option value="prado-landcruiser">Prado Landcruiser</option>
+  <option value="rav4-suv">Rav4 SUV</option>
+  <option value="mini-bus">Mini Bus</option>
+  <option value="tipper-truck-20t">Tipper Truck 20T</option>
+  <option value="excavator">Excavator</option>
+  <option value="compactor">Compactor</option>
+  <option value="grader">Grader</option>
+  <option value="bulldozer">Bulldozer</option>
+  <option value="wheel-loaders">Wheel Loaders</option>
+  <option value="crane">Crane</option>
+  <option value="forklift">Forklift</option>
+</select>
+			<div class="error-message">Please select a vehicle type.</div>
+		</div>
+		<div class="form-group">
+			<label for="cargo-type">Cargo Type *</label>
+			<input type="text" id="cargo-type" name="cargo-type" placeholder="Enter cargo type" required>
+			<div class="error-message">Please enter cargo type.</div>
+		</div>
+		<div class="form-group">
+			<label for="cargo-weight">Cargo Weight (in Kgs) *</label>
+			<input type="number" id="cargo-weight" name="cargo-weight" placeholder="Enter cargo weight in Kgs" required>
+			<div class="error-message">Please enter cargo weight.</div>
+		</div>
+		<div class="form-group">
+			<label for="cargo-volume">Cargo Volume (L * W * H) *</label>
+			<input type="text" id="cargo-volume" name="cargo-volume" placeholder="Enter cargo volume in (Length * Width * Height)" required>
+			<div class="error-message">Please enter cargo volume.</div>
+		</div>
+		<div class="form-group">
+			<label for="carrying-capacity">Carrying or Lifting Capacity (in Kgs)</label>
+			<input type="text" id="carrying-capacity" name="carrying-capacity" placeholder="Enter carrying or lifting capacity">
+		</div>
+		<div class="form-group">
+			<label for="passenger-count">Number of Passengers</label>
+			<input type="number" id="passenger-count" name="passenger-count" placeholder="Enter number of passengers">
+		</div>
+		<div class="form-group">
+			<label for="hours-per-day">Number of Hours per Day *</label>
+			<input type="number" id="hours-per-day" name="hours-per-day" placeholder="Enter number of hours per day" required>
+			<div class="error-message">Please enter number of hours per day.</div>
+		</div>
+		<div class="form-group">
+			<label for="project-duration">Project Duration *</label>
+			<input type="text" id="project-duration" name="project-duration" placeholder="Enter project duration" required>
+			<div class="error-message">Please enter project duration.</div>
+		</div>
+		<div class="form-group">
+			<label for="payable-amount">Payable Amount *</label>
+			<input type="text" id="payable-amount" name="payable-amount" placeholder="Enter payable amount" required>
+			<div class="error-message">Please enter payable amount.</div>
+		</div>
+		<input type="submit" value="Submit">
+    <div class="form-message" id="form-message"></div>

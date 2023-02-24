@@ -63,6 +63,31 @@
   /**
    * Scrolls to an element with header offset
    */
+  var button = document.getElementById("book-service-btn");
+  const logoTitle =document.querySelector ('.logo-title');
+
+  // Add a scroll event listener to the window
+  window.addEventListener("scroll", function() {
+    // Check if the user has scrolled to a certain extent
+    if (window.scrollY > 400) {
+      // If so, set the display property of the button to "block"
+      button.style.display = "block";
+     
+    } else {
+      // Otherwise, set the display property of the button to "none"
+      button.style.display = "none";
+    }
+
+
+    if (this.window.scrollY >100) {
+
+      logoTitle.style.display ="block";
+    }
+    else {
+      logoTitle.style.display ="none";
+    }
+    
+  });
   const scrollto = (el) => {
     let header = select('#header')
     let offset = header.offsetHeight
@@ -81,11 +106,14 @@
   /**
    * Toggle .header-scrolled class to #header when page is scrolled
    */
+
   let selectHeader = select('#header')
   if (selectHeader) {
     const headerScrolled = () => {
       if (window.scrollY > 100) {
+       
         selectHeader.classList.add('header-scrolled')
+       
       } else {
         selectHeader.classList.remove('header-scrolled')
       }
@@ -247,3 +275,175 @@
   });
 
 })()
+
+
+const cookieAlert = document.getElementById("cookie-alert");
+const acceptCookiesButton = document.getElementById("accept-cookies");
+const rejectCookiesButton = document.getElementById("reject-cookies");
+
+// Check if the user has already accepted or rejected cookies
+if (localStorage.getItem("cookiesAccepted")) {
+  cookieAlert.style.display = "none";
+} else if (localStorage.getItem("cookiesRejected")) {
+  // If the user has already rejected cookies, hide the alert and don't show it again
+  cookieAlert.style.display = "none";
+} else {
+  // If the user hasn't accepted or rejected cookies, show the alert
+  cookieAlert.style.display = "block";
+}
+
+// Add an event listener to the accept cookies button
+acceptCookiesButton.addEventListener("click", () => {
+  // Set a cookie to remember that the user has accepted cookies
+  localStorage.setItem("cookiesAccepted", true);
+  // Hide the cookie alert
+  cookieAlert.style.display = "none";
+});
+
+// Add an event listener to the reject cookies button
+rejectCookiesButton.addEventListener("click", () => {
+  // Set a cookie to remember that the user has rejected cookies
+  localStorage.setItem("cookiesRejected", true);
+  // Hide the cookie alert
+  cookieAlert.style.display = "none";
+});
+
+const showModalButton = document.getElementById("book-btn");
+const formModal = document.getElementById("book-form-modal");
+const closeModalButton = document.getElementsByClassName("close")[0];
+
+// Show the modal when the button is clicked
+showModalButton.addEventListener("click", () => {
+  formModal.style.display = "block";
+});
+
+// Hide the modal when the close button is clicked
+closeModalButton.addEventListener("click", () => {
+  formModal.style.display = "none";
+});
+
+// Hide the modal when the user clicks outside of it
+window.addEventListener("click", (event) => {
+  if (event.target == formModal) {
+    formModal.style.display = "none";
+  }
+});
+
+
+
+
+const form = document.querySelector('form');
+const submitButton = form.querySelector('input[type="submit"]');
+
+const fullName = form.querySelector('#full-name');
+const companyName = form.querySelector('#company-name');
+const emailAddress = form.querySelector('#email-address');
+const mobileNumber = form.querySelector('#mobile-number');
+const pickUpLocation = form.querySelector('#pick-up-location');
+const deliveryDestination = form.querySelector('#delivery-destination');
+const vehicleType = form.querySelector('#vehicle-type');
+const cargoType = form.querySelector('#cargo-type');
+const cargoWeight = form.querySelector('#cargo-weight');
+const cargoVolume = form.querySelector('#cargo-volume');
+
+const offerAmount = form.querySelector('#offer-amount');
+const fullNameError = form.querySelector('#full-name-error');
+const companyNameError = form.querySelector('#company-name-error');
+const emailAddressError = form.querySelector('#email-address-error');
+const mobileNumberError = form.querySelector('#mobile-number-error');
+const pickUpLocationError = form.querySelector('#pick-up-location-error');
+const deliveryDestinationError = form.querySelector('#delivery-destination-error');
+const vehicleTypeError = form.querySelector('#vehicle-type-error');
+const cargoTypeError = form.querySelector('#cargo-type-error');
+const cargoWeightError = form.querySelector('#cargo-weight-error');
+const cargoVolumeError = form.querySelector('#cargo-volume-error');
+
+const offerAmountError = form.querySelector('#offer-amount-error');
+
+submitButton.addEventListener('click', function(event) {
+  event.preventDefault();
+  clearErrors();
+  if (isFormValid()) {
+    form.submit();
+  }
+});
+
+function isFormValid() {
+  let isValid = true;
+  if (!fullName.value) {
+    fullNameError.innerText = 'Please enter your full name';
+    isValid = false;
+  }
+  if (!companyName.value) {
+    companyNameError.innerText = 'Please enter your company name';
+    isValid = false;
+  }
+  if (!emailAddress.value) {
+    emailAddressError.innerText = 'Please enter your email address';
+    isValid = false;
+  } else if (!isValidEmail(emailAddress.value)) {
+    emailAddressError.innerText = 'Please enter a valid email address';
+    isValid = false;
+  }
+  if (!mobileNumber.value) {
+    mobileNumberError.innerText = 'Please enter your mobile number';
+    isValid = false;
+  } else if (!isValidMobileNumber(mobileNumber.value)) {
+    mobileNumberError.innerText = 'Please enter a valid mobile number';
+    isValid = false;
+  }
+  if (!pickUpLocation.value) {
+    pickUpLocationError.innerText = 'Please select a pick up location';
+    isValid = false;
+  }
+  if (!deliveryDestination.value) {
+    deliveryDestinationError.innerText = 'Please select a delivery destination';
+    isValid = false;
+  }
+  if (!vehicleType.value) {vehicleTypeError.innerText = 'Please select a vehicle type';
+  isValid = false;
+  }
+  if (!cargoType.value) {
+  cargoTypeError.innerText = 'Please enter the cargo type';
+  isValid = false;
+  }
+  if (!cargoWeight.value) {
+  cargoWeightError.innerText = 'Please enter the cargo weight';
+  isValid = false;
+  }
+  if (!cargoVolume.value) {
+  cargoVolumeError.innerText = 'Please enter the cargo volume';
+  isValid = false;
+  }
+ 
+  if (!offerAmount.value) {
+  offerAmountError.innerText = 'Please enter the offer amount';
+  isValid = false;
+  }
+  return isValid;
+  }
+
+  function clearErrors() {
+		fullNameError.innerText = '';
+		companyNameError.innerText = '';
+		emailAddressError.innerText = '';
+		mobileNumberError.innerText = '';
+		pickUpLocationError.innerText = '';
+		deliveryDestinationError.innerText = '';
+		vehicleTypeError.innerText = '';
+		cargoTypeError.innerText = '';
+		cargoWeightError.innerText = '';
+		cargoVolumeError.innerText = '';
+		capacityError.innerText = '';
+		offerAmountError.innerText = '';
+	}
+
+	function isValidEmail(email) {
+		const emailRegex = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
+		return emailRegex.test(email);
+	}
+
+	function isValidMobileNumber(mobileNumber) {
+		const mobileNumberRegex = /^(\+254|0)\d{9}$/;
+		return mobileNumberRegex.test(mobileNumber);
+	} 

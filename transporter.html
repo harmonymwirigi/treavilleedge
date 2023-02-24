@@ -1,0 +1,80 @@
+
+  
+  <link href="assets/css/login_style.css" rel="stylesheet">
+	<h1 style="margin-bottom:20px;color:#122c9a">Transporter Signup</h1>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Create Account</h1>
+			<input type="text" name="fullname" placeholder="Name of Transporter (Full Name)">
+		<input type="text" name="companyname" placeholder="Company Name">
+		<input type="text" name="idnumber" placeholder="ID Number / Company Reg Number (Per Logbook)">
+		<input type="email" name="email" placeholder="Email Address (Login ID)">
+		<input type="password" name="password" placeholder="Login Password (Min 8 Characters Containing Letters + Numbers + Special Characters)">
+		<input type="text" name="ownermobile" placeholder="Owner’s Mobile Number">
+		<input type="text" name="alternativemobile" placeholder="Alternative Mobile Number">
+		<input type="text" name="paymentdetails" placeholder="Payment Account Details (Mpesa No / Bank Account No)">
+		<input type="text" name="accountname" placeholder="Account Name">
+		<input type="text" name="bankmpesa" placeholder="Bank and Branch / Mpesa">
+		<input type="text" name="drivername" placeholder="Driver’s Name">
+		<input type="text" name="driverid" placeholder="Driver’s ID Number">
+		<input type="text" name="drivermobile" placeholder="Driver’s Mobile Number">
+		<input type="text" name="alternativedrivermobile" placeholder="Alternative Mobile Number">
+		<input type="text" name="area" placeholder="Area of Operation">
+		<input type="text" name="town" placeholder="Town">
+		<select name="vehicle-type">
+			<option value="">Vehicle Type:</option>
+			<option value="Motor Bike">Motor Bike</option>
+			<option value="Van">Van</option>
+			<option value="PickUp">PickUp</option>
+			<option value="Truck 3T">Truck 3T</option>
+			<option value="Truck 5T">Truck 5T</option>
+			<option value="Truck 7T">Truck 7T</option>
+			<option value="Truck 10T">Truck 10T</option>
+			<option value="Truck 15T">Truck 15T</option>
+			<option value="Trailer 28T">Trailer 28T</option>
+			<option value="Flat Bed">Flat Bed</option>
+			<option value="Tour Van">Tour Van</option>
+			<option value="Tour Landcruiser"></option>
+			<option value="Prado Landcruiser">Prado Landcruiser</option>
+<option value="Rav4 SUV">Rav4 SUV</option>
+<option value="Mini Bus">Mini Bus</option>
+<option value="Tipper Truck 20T">Tipper Truck 20T</option>
+<option value="Excavator">Excavator</option>
+<option value="Compactor">Compactor</option>
+<option value="Grader">Grader</option>
+<option value="Bulldozer">Bulldozer</option>
+<option value="Wheel Loaders">Wheel Loaders</option>
+<option value="Crane">Crane</option>
+<option value="Forklift">Forklift</option>
+</select>
+			<button>Sign Up</button>
+			
+			<a href="clientsignup.html">I want to book service</a>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Sign in</h1>
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<a href="#">Forgot your password?</a>
+			<a href="transporterdashboard.html"><button id="sign-in" >Sign In</button></a>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+					<p>Enter your details and continue the journey with us</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+			<h1>Welcome Back To Trevy's Edge</h1>			
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="assets/js/main3.js"></script>
+</body>
+</html>

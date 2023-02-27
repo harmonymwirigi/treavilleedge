@@ -1,0 +1,78 @@
+{% load static %}
+<style>
+	#msg {
+		align-items: center;
+		margin-left: 70px;
+		color: red;
+	}
+</style>
+<link href="{% static 'assets/css/login_style.css' %}" rel="stylesheet">
+<h1 style="margin-bottom:20px;color:#122c9a">Client Signup</h1>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+
+
+		<form action="clientsignup" method="post">
+			{% csrf_token %}
+			<h1>Create Account</h1>
+			{% for message in messages %}
+			<h5 id="msg">{{ message }}</h5>
+			{% endfor %}
+
+			<input type="text" name="name" placeholder="Name of Client (Full Name)" required>
+			<input type="text" name="company" placeholder="Company Name" required>
+			<input type="text" name="id" placeholder="ID Number (Attach ID / Business Registration Cert)" required>
+			<input type="email" name="email" placeholder="Email Address (Login ID)" required>
+			<input type="text" name="area" placeholder="Area of Operation" required>
+			<input type="text" name="city" placeholder="City" required>
+			<input type="password" name="password" placeholder="Password" required>
+			<input type="password" name="password2" placeholder="Confirm Password" required>
+			<input type="tel" name="mobile" placeholder="Mobile Number" required>
+			<input type="tel" name="alt" placeholder="Alternative Number">
+			<input type="hidden" name="clientlogin" value="clientsignup">
+			<input type="hidden" name="user_type" value="client">
+
+
+			<input type="submit" value="Submit">
+
+		</form>
+
+		<a href="transporter">I am a Transporter</a>
+
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+
+
+		<form action="clientsignup" method="post">
+			{% csrf_token %}
+			<h1>Sign in</h1>
+			{% for message in messages %}
+			<h5 id="msg">{{ message }}</h5>
+			{% endfor %}
+			<input type="hidden" name="clientlogin" value="clientlogin">
+			<input type="email" placeholder="Email" required name="email" />
+			<input type="hidden" name="user_type" value="client">
+
+			<input type="password" placeholder="Password" name="password" required />
+			<a href="#">Forgot your password?</a>
+			<a href="loggedinclient"><button id="sign-in">Sign In</button></a>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back To Trevy's Edge</h1>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<p>Enter your details and continue the journey with us</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="{% static 'assets/js/main3.js' %}"></script>
+</body>
+
+</html>

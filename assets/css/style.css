@@ -1781,3 +1781,171 @@ cursor: pointer;
 .book-option-form:hover{
    color: #8b8b8b;
 }
+
+.overall-container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #f1f1f1;
+  width: 200px;
+  transition: width 0.5s;
+  border-radius: 10px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  height: calc(100% - 160px); /* subtract top and bottom margins */
+  position: relative;
+}
+.sidebar.hidden {
+  width: 0;
+}
+.sidebar .breadcrumb {
+  position: absolute;
+  top: 10px;
+  right: -20px;
+  background-color: #333;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Content */
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Main content area */
+.main {
+  padding: 20px;
+}
+
+
+.table-container {
+  overflow-x: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 16px;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+@media screen and (max-width: 600px) {
+  th, td {
+    display: block;
+    width: 100%;
+  }
+  
+  th {
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  tr {
+    margin-bottom: 10px;
+  }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 600px) {
+  .overall-container {
+    flex-direction: column;
+  }}
+
+
+
+
+
+
+
+
+
+
+
+
+  .request-btn{
+margin-top:25px;
+width:120px;
+  }
+
+  .vertical-container {
+    display: flex;
+align-items: center;
+    height: 150px;
+    padding: 10px;
+    width: 90%;
+    margin-left:40px;
+    box-sizing: border-box;
+    background-color: #cdf9ff;
+    margin-top:20px;
+  }
+  
+  .image-container-cta {
+    flex: 0 0 120px; /* keep the width fixed to 120px */
+    height: 100%;
+    overflow: hidden;
+    margin-right: 40px;
+  }
+  
+  .image-container-cta img {
+    display: block;
+    width: 100%; /* make the image fill the container */
+    height: auto;
+
+  }
+  
+  .vertical-container.text-container {
+  /* take up the remaining space */
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* adjust the layout for smaller screens */
+    .vertical-container {
+   
+      height: auto;
+    }
+    .image-container-cta {
+ 
+      height: 100px;
+      width: 100px;
+     
+    }
+    
+  }
+
+ 

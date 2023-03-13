@@ -447,3 +447,5 @@ function isFormValid() {
 		const mobileNumberRegex = /^(\+254|0)\d{9}$/;
 		return mobileNumberRegex.test(mobileNumber);
 	} 
+
+

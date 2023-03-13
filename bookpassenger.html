@@ -1,0 +1,130 @@
+
+<div id="book-form-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span> 
+
+    <h2 id="book-form-header" class="book-option-form">Book construction equipment</h2>
+    <br>
+     
+ <form id="construction-form" >
+			<div>
+			<label for="full-name">Full Name *</label>
+			<input type="text" id="full-name" name="full-name" placeholder="Enter your full name">
+			<div id="full-name-error" class="error"></div>
+		</div>
+		<div>
+			<label for="company-name">Company Name *</label>
+			<input type="text" id="company-name" name="company-name" placeholder="Enter your company name">
+			<div id="company-name-error" class="error"></div>
+		</div>
+		<div>
+			<label for="email">Email Address *</label>
+			<input type="email" id="email" name="email" placeholder="Enter your email address">
+			<div id="email-error" class="error"></div>
+		</div>
+		<div>
+			<label for="mobile-number">Mobile Number *</label>
+			<input type="tel" id="mobile-number" name="mobile-number" placeholder="Enter your mobile number">
+			<div id="mobile-number-error" class="error"></div>
+		</div>
+		<div>
+			<label for="alt-number">Alternative Number</label>
+			<input type="tel" id="alt-number" name="alt-number" placeholder="Enter your alternative number">
+			<div id="alt-number-error" class="error"></div>
+		</div>
+
+   <div>
+        <label for="pickupLocation">Pick Up Location</label>
+        <input list="pickupLocations" type="text" id="pickupLocation" name="pickupLocation" required placeholder="Enter your pick up location">
+        <datalist id="pickupLocations">
+            <option value="O.Rongai">
+            <option value="Mombasa">
+            <option value="Nakuru">
+            <option value="Malaba">
+            <option value="Nairobi">
+        </datalist>
+        <span class="error" id="pickupLocationError"></span>
+    </div>
+    
+    <div>
+		<label for="delivery-destination">Destination *</label>
+ <input list="delivery-destinations" type="text" id="deliveryDestination" name="delivery-destination"  required placeholder="Enter your delivery destination">
+
+		<datalist id="delivery-destinations" >
+			<option value="" selected disabled>Select a destination</option>
+			<option value="destination1">
+			<option value="destination2">
+			<option value="destination3">
+		</datalist>
+		<div id="delivery-destination-error" class="error"></div>
+	</div>
+	<div>
+		<label for="vehicle-type">Vehicle Type *</label>
+		<select id="vehicle-type" name="vehicle-type" class="select-input" >
+			<option value="" selected disabled>Select a vehicle type</option>
+			<option value="motor-bike">Motor Bike</option>
+			<option value="van">Van</option>
+			<option value="tour-landcruiser">Tour Landcruiser</option>
+			<option value="prado-landcruiser">Prado Landcruiser</option>
+			<option value="rav4-suv">Rav4 SUV</option>
+			<option value="mini-bus">Mini Bus</option>
+
+		</select>
+		<div id="vehicle-type-error" class="error"></div>
+	</div>
+
+
+<div>
+		<label for="passenger-capacity">Number of passengers *</label>
+		<input type="number" id="passenger-capacity" name="passenger-capacity" placeholder="Enter the number of passengers">
+		<div id="cargo-weight-error" class="error"></div>
+	</div>
+
+<div>
+<label for="offer-amount">Offer Amount (Ksh) *</label>
+<input type="number" id="offer-amount" name="offer-amount" placeholder="Enter the offer amount">
+<div id="offer-amount-error" class="error"></div>
+</div>
+
+
+
+
+  <div class="form-message" id="form-message"></div>
+</div>
+   </form>
+ 
+   <input type="submit" value="Submit">
+  </div>
+  
+</div>
+
+
+
+
+
+<div>
+<label for="offer-amount">Offer Amount (Ksh) *</label>
+<input type="number" id="offer-amount" name="offer-amount" placeholder="Enter the offer amount">
+<div id="offer-amount-error" class="error"></div>
+</div>
+<div>
+
+
+  <div class="form-message" id="form-message"></div>
+</div>
+   </form>
+ 
+   <input type="submit" value="Submit">
+  </div>
+  
+</div>
+
+
+
+<!--__________________________________________________________-->
+
+
+
+
+<!--__________________________________________________________-->
+

@@ -1,0 +1,13 @@
+pyasn1
+ jws
+ six
+ rsa
+  requests-toolbelt
+ python-jwt
+ pyparsing
+  pyasn1-modules
+   protobuf
+    httplib2
+     googleapis-common-protos
+      oauth2client
+       gcloud

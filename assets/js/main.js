@@ -308,26 +308,6 @@ rejectCookiesButton.addEventListener("click", () => {
   cookieAlert.style.display = "none";
 });
 
-const showModalButton = document.getElementById("book-btn");
-const formModal = document.getElementById("book-form-modal");
-const closeModalButton = document.getElementsByClassName("close")[0];
-
-// Show the modal when the button is clicked
-showModalButton.addEventListener("click", () => {
-  formModal.style.display = "block";
-});
-
-// Hide the modal when the close button is clicked
-closeModalButton.addEventListener("click", () => {
-  formModal.style.display = "none";
-});
-
-// Hide the modal when the user clicks outside of it
-window.addEventListener("click", (event) => {
-  if (event.target == formModal) {
-    formModal.style.display = "none";
-  }
-});
 
 
 
@@ -449,3 +429,21 @@ function isFormValid() {
 	} 
 
 
+
+
+  function openModal1() {
+    document.getElementById("cargo-modal").style.display = "block";
+  }
+  function openModal2() {
+    document.getElementById("passenger-modal").style.display = "block";
+  }
+  function openModal3() {
+    document.getElementById("construction-modal").style.display = "block";
+  }
+  
+
+  function closeModal() {
+    document.getElementById("cargo-modal").style.display = "none";
+    document.getElementById("passenger-modal").style.display = "none";
+    document.getElementById("construction-modal").style.display = "none";
+  }

@@ -1928,3 +1928,12 @@ align-items: center;
  img{
   filter: unset;
  }
+
+
+ @media screen and (max-width: 768px) {
+  /* adjust the layout for smaller screens */
+#swiper-upper-container img {
+
+    height: 200px  !important;
+    filter:invert(100%) !important;
+  }}

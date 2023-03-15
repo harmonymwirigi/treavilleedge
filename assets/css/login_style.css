@@ -162,6 +162,8 @@ height: 700px;
 	background-color: #48d6d2;
 	background: -webkit-linear-gradient(to right, #48d6d2, #48d6d2);
 	background: linear-gradient(to right, #122c91, #12398d);
+
+	background: linear-gradient(to right, #48d6d2, #4580ff);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;

@@ -447,3 +447,27 @@ function isFormValid() {
     document.getElementById("passenger-modal").style.display = "none";
     document.getElementById("construction-modal").style.display = "none";
   }
+
+
+
+
+const carousel = document.querySelector('.carousel');
+const slides = document.querySelector('.slides');
+const images = document.querySelectorAll('.slides img');
+
+const slideWidth = images[0].clientWidth;
+
+let currentSlide = 0;
+let slideInterval = setInterval(nextSlide, 3000);
+
+// Set the width of the slides container
+slides.style.width = `${slideWidth * images.length}px`;
+
+function nextSlide() {
+  if (currentSlide === images.length - 1) {
+    currentSlide = 0;
+  } else {
+    currentSlide++;
+  }
+  slides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+}

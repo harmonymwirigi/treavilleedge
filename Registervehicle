@@ -1,0 +1,37 @@
+<form action="#">
+    <h1>registervehicle</h1>
+<input type="text" name="paymentdetails" placeholder="Payment Account Details (Mpesa No / Bank Account No)"required>
+		<input type="text" name="accountname" placeholder="Account Name"required>
+		<input type="text" name="bankmpesa" placeholder="Bank and Branch / Mpesa"required>
+		<input type="text" name="drivername" placeholder="Driver’s Name">
+		<input type="text" name="driverid" placeholder="Driver’s ID Number"required>
+		<input type="text" name="drivermobile" placeholder="Driver’s Mobile Number" required>
+		<input type="text" name="alternativedrivermobile" placeholder="Alternative Mobile Number">
+		<input type="text" name="area" placeholder="Area of Operation">
+		<input type="text" name="town" placeholder="Town">
+		<select name="vehicle-type">
+			<option value="">Vehicle Type:</option>
+			<option value="Motor Bike">Motor Bike</option>
+			<option value="Van">Van</option>
+			<option value="PickUp">PickUp</option>
+			<option value="Truck 3T">Truck 3T</option>
+			<option value="Truck 5T">Truck 5T</option>
+			<option value="Truck 7T">Truck 7T</option>
+			<option value="Truck 10T">Truck 10T</option>
+			<option value="Truck 15T">Truck 15T</option>
+			<option value="Trailer 28T">Trailer 28T</option>
+			<option value="Flat Bed">Flat Bed</option>
+			<option value="Tour Van">Tour Van</option>
+			<option value="Tour Landcruiser"></option>
+			<option value="Prado Landcruiser">Prado Landcruiser</option>
+<option value="Rav4 SUV">Rav4 SUV</option>
+<option value="Mini Bus">Mini Bus</option>
+<option value="Tipper Truck 20T">Tipper Truck 20T</option>
+<option value="Excavator">Excavator</option>
+<option value="Compactor">Compactor</option>
+<option value="Grader">Grader</option>
+<option value="Bulldozer">Bulldozer</option>
+<option value="Wheel Loaders">Wheel Loaders</option>
+<option value="Crane">Crane</option>
+<option value="Forklift">Forklift</option>
+</select>

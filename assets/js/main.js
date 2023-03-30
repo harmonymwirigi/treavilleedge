@@ -440,14 +440,21 @@ function isFormValid() {
   function openModal3() {
     document.getElementById("construction-modal").style.display = "block";
   }
+
+  function openModal4() {
+    document.getElementById("register-vehicle-modal").style.display = "block";
+  }
   
 
   function closeModal() {
     document.getElementById("cargo-modal").style.display = "none";
     document.getElementById("passenger-modal").style.display = "none";
     document.getElementById("construction-modal").style.display = "none";
+;
   }
-
+  function closeModal4() {
+    document.getElementById("register-vehicle-modal").style.display = "none";
+  }
 
 
 
@@ -471,3 +478,19 @@ function nextSlide() {
   }
   slides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
 }
+
+
+const fileUpload = document.getElementById('file-upload');
+const successMessage = document.getElementById('success-message');
+
+fileUpload.addEventListener('change', function() {
+  const allowedExtensions = /(\.pdf|\.png|\.jpg|\.jpeg)$/i;
+  const selectedFile = this.files[0];
+  if (!allowedExtensions.exec(selectedFile.name)) {
+    alert('Invalid file type. Please select a PDF or image file.');
+    this.value = '';
+    return;
+  }
+  successMessage.innerHTML = 'File uploaded successfully.';
+});
+

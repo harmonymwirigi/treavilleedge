@@ -1,0 +1,91 @@
+<style>
+	.container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 10px;
+		max-width: 800px;
+		margin: auto;
+	}
+
+	input,
+	select {
+		width: 100%;
+		padding: 10px;
+		box-sizing: border-box;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+	}
+
+	button {
+		background-color: #4CAF50;
+		color: white;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	button:hover {
+		background-color: #45a049;
+	}
+
+	a {
+		display: block;
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	@media screen and (max-width: 768px) {
+		form {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
+  
+  <link href="/static/assets/css/login_style.css" rel="stylesheet">
+	<h1 style="margin-bottom:20px;color:#122c9a">Transporter Signup</h1>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="/signup" method="post">
+			<h1>Create Account</h1>
+			{{ form.hidden_tag() }}
+			{{ form.full_name(placeholder='Name of Transporter (Full Name)') }}
+			{{form.company_name(placeholder='Company Name' )}}
+			{{ form.Id_number(placeholder='ID Number / Company Reg Number (Per Logbook)' ) }}
+			{{ form.email_adress(placeholder='Email Address (Login ID)') }}
+			{{ form.login_password(placeholder='Login Password (Min 8 Characters Containing Letters + Numbers + Special Characters)') }}
+			{{ form.confirm_password(placeholder= 'Confirm Password') }}
+			{{ form.owner_mobile(placeholder='Owner’s Mobile Number') }}
+			{{ form.alt_mobile(placeholder='Alternative Mobile Number') }}
+			{{ form.Submit }}
+			
+			<a href="clientsignup.html">I want to book service</a>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="/login" method="post">
+			{{ Lform.hidden_tag() }}
+			<h1>Sign in</h1>
+			{{ Lform.email(placeholder='email') }}
+			{{ Lform.password(placeholder='Password') }}
+			{{ Lform.submit }}
+			<a href="#">Forgot your password?</a>
+			<a href="transporterdashboard.html">{{ Lform.Submit(id='sign-in') }}</a>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+					<p>Enter your details and continue the journey with us</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+			<h1>Welcome Back To Trevy's Edge</h1>			
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="/static/assets/js/main3.js"></script>
+</body>
+</html>

@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>TrevysEdge</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  <link href="/static/assets/img/favicon.png" rel="icon">
+  <link href="/static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link href="/static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="/static/assets/css/style.css" rel="stylesheet">
+    <link href="/static/assets/css/dashstyle.less" rel="stylesheet/less">
+<style>
+p{
+   text-align: justify;
+  text-justify: inter-word;
+}
+
+.carousel {
+  width:400px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+  width:400px;
+  height: 400px;
+}
+ li h2{
+
+  font-size: 14px !important;
+}
+#client-benefits .card{
+  height: 280px;
+}
+
+
+</style>
+
+  </head>
+  <body>
+  <!-- ======= Header ======= -->
+  <div class="contact-info">
+  
+    <div class="social-links">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+      
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>  
+  <p><i class="fas fa-envelope"></i>enquiries@treavilleedge.com</p>
+  <p><i class="fas fa-phone"></i>+ 254 722 251 795</p>
+   <p><i class="fas fa-phone"></i>+ 254 722 962 499</p>
+    
+</div>
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between" id="float-left">
+
+    <!--<h1 class="logo"><a href="index-2.html">trevysedgetrevysedge</a></h1>-->
+
+      <a href="index.html" class="logo"><img src="/static/assets/img/logonoBG.png" alt="" class="img-fluid"></a>
+
+           <h1 class ="logo-title">Transporter</h1>
+
+      <nav id="navbar" class="navbar">
+      
+        <ul class="position-left">
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="howitworks.html">How it works</a></li>
+          <li><a class="nav-link scrollto" href="services.html">Services</a></li>
+        
+      
+
+          <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="aboutus.html">Our Story</a></li>    
+                     <li><a href="aboutus.html">Core Values</a></li> 
+                       <li><a href="aboutus.html">Partnership</a></li>                      
+              <li><a href="#">Help and FAQs</a></li>
+              <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
+            </ul>
+          </li>
+      
+          <li><a class="getstarted scrollto" href="{{url_for('transportersignup')}}">Login</a></li>
+          <li><a class="getstarted scrollto"  href="{{url_for('transportersignup')}}">Sign up</a></li>
+        
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle" id="nav-toggler"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center " style="	background: linear-gradient(to left, #48d6d2,#122c91,#122c91);">
+  
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1>Welcome</h1> 
+          <h2>Register your vehicle and Partner with us</h2>
+
+          <h6>Providing Our Partners with
+more transport jobs at the
+touch of a button. Sign up with us to increase your pick up jobs at
+various locations - Let’s get busy!
+<br><a style="text-decoration:underline" href="services.html">Learn more</a></h6>
+          <div class="d-flex">
+            <a href="transporter.html" class="btn-get-started" id="book-btn">Get Started</a>
+          
+          </div>
+        </div>
+<style>
+
+
+</style>
+
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" id="swiper-upper-container">
+<img src="/static/assets/img/illustrations/vehicles-146444.svg" style="height:500px; " class="img-fluid animated" alt="">
+    </div>
+
+    </section>
+
+   
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container">
+
+        <div class="text-center">
+          <h3>How Treaville Edge will work for you.</h3>
+          <p > 
+            Treaville edge provides you with a platform where you can register with us and pick jobs from any location within the country. This
+creates a good flow of business for our partners. A truck driver can pick jobs on their way to a pick or on return from a drop off
+destination. A combined solution for several jobs along a particular route can be agreed upon with the clients to provide an
+affordable solution for their transport jobs. Most vehicle owners will pick a job that is convenient to their location and work
+schedule.
+          </p>
+             <p> 
+          We will connect drivers and truck owners to more jobs enroute to various destinations in a transparent, efficient and secure way.
+Clients will place job orders with us, then our partners will be able to log on to the Jobs Dashboard Tab to pick the jobs that can be
+conveniently done to earn extra cash. When you click on Apply button, you will automatically receive a message giving you details of
+the job. The client will be requested to make full payment for the job to Treaville Edge. Once payment is received, the driver gets a
+dispatch message with the clients contact and location. Once the job is completed and client confirms, you will receive payment on
+the same day.
+
+          </p>
+          <a class="cta-btn" href="transportersignup.html">SIGN UP</a>
+        </div>
+
+      </div>
+
+    </section><!-- End Cta Section -->
+
+
+
+
+
+
+
+
+
+
+<div class="hero-two">
+  <div class="left">
+  <h2>Vehicles to register</h2> 
+         
+    <ul style="list-style-type: disc;">
+  <li> <h2>Trucks (3T, 5T, 7T, 10T & 15T)s</h2></li>
+  <li> <h2>Pickups</h2></li>
+  <li> <h2>Delivery Vans</h2></li>
+    <li> <h2>Motor Bikes</h2></li>
+      <li> <h2>Minibuses
+</h2></li>
+        <li> <h2>Tour Vans</h2></li>
+          <li> <h2>Tour Land Cruisers</h2></li>
+          <li> <h2>Prados</h2></li>
+          <li> <h2>SUVs (Rav4 Size)</h2></li>
+          <li> <h2>Construction Vehicles: Tippers, Excavator</h2></li>
+          <li> <h2>Compactor, Grader, Bulldozer, Wheel Loaders, Crane, Forklift</h2></li>
+
+</ul>
+         
+  
+  </div>
+  <div class="right">
+<div class="carousel">
+  <div class="slides">
+    <img src="/static/assets/img/gallery/truckwood.jpg" alt="Image 1" />
+    <img src="/static/assets/img/gallery/truck-ballast.jpg" alt="Image 2" />
+    <img src="/static/assets/img/gallery/KCS Minibus Right.jpeg" alt="img" />
+     <img src="/static/assets/img/gallery/Bus for Hire_15.jpeg" alt="img" />
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+
+
+<div class="cardlet-container">
+  <div class="cardlet">
+    <img src="/static/assets/images/vector/register.jpg" alt="Image 1" />
+    <h2>Register:</h2>
+    <p>Register your
+Vehicle with
+Treaville Edge</p>
+  </div>
+  <div class="cardlet">
+    <img src="/static/assets/images/vector/pickjob.jpg" alt="Image 2" />
+    <h2>Pick Job:</h2>
+    <p>Log in to the site,
+Click on Jobs
+Dashboard Tab,
+Check Available
+Jobs, Click on
+Pick Job Button
+</p>
+  </div>
+  <div class="cardlet">
+    <img src="/static/assets/images/vector/clientpayment.jpg" alt="Image 3" />
+    <h2>Client Payment:</h2>
+    <p>
+Once a job is
+picked, client will
+be requested to
+make full
+payment.
+</p>
+  </div>
+  <div class="cardlet">
+    <img src="/static/assets/images/vector/customerdetails.jpg" alt="Image 4" />
+    <h2>Customer
+Details:</h2>
+    <p>
+After client
+payment, you will
+be sent the client
+phone and
+location, so that
+you can avail
+vehicle for loading.</p>
+  </div>
+  <div class="cardlet">
+    <img src="/static/assets/images/vector/deliveryconfirmed.jpg" alt="Image 5" />
+    <h2>Delivery &
+Confirmation:</h2>
+    <p>
+The driver will
+deliver services
+as agreed with
+client. Then will
+request customer
+to confirm
+delivery.
+</p>
+  </div>
+  <div class="cardlet">
+    <img src="/static/assets/images/vector/transporterpayment.jpg" alt="Image 6" />
+    <h2>Transporter
+Payment:</h2>
+    <p>
+Upon
+confirmation of
+delivery, we will
+remit full
+payment less
+10%
+commission.</p>
+  </div>
+</div>
+
+
+
+
+
+
+<section id="client-benefits" class="">
+<div class="card-header">
+  <h1>Transporter Benefits</h1>
+</div>
+<div class="card-container">
+
+  <div class="card">
+ 
+    <div class="card-text">
+      <h2>Return cargo at your nearest
+point</h2>
+      <p>
+The driver gets to load his vehicle at
+a location that is nearby hence does
+not incur extra movement cost. You
+will always get return cargo load
+close to your drop off point.
+</p>
+    </div>
+  </div>
+  <div class="card">
+
+    <div class="card-text">
+      <h2>High Volume of Jobs</h2>
+      <p>
+Our Platform will deliver more
+jobs than any other platform.
+This way drivers get to choose
+the best job to pick for the day. </p>
+    </div>
+  </div>
+  <div class="card">
+    
+    <div class="card-text">
+      <h2>Full trip Cargo Load</h2>
+      <p>
+It’s now possible for you to get
+loads for 2 way journey hence
+charge clients favourable rates. A
+transporter can also pick 2-3
+cargo loads from one destination
+to the other or enroute. </p>
+    </div>
+  </div>
+  <div class="card">
+   
+    <div class="card-text">
+      <h2>Reduced Downtime
+</h2>
+      <p>
+Jobs from this platform ought to
+keep a driver well engaged
+throughout the month. Log on
+to check new jobs that are
+being posted by clients.
+
+</p>
+    </div>
+  </div>
+  <div class="card">
+   
+    <div class="card-text">
+      <h2>Combined Solution</h2>
+      <p>
+A driver can offer a variety of
+solution for clients in the same
+route. This way the cost of
+transport becomes affordable to
+clients.
+</p>
+    </div>
+  </div>
+
+
+
+  <div class="card">
+ 
+    <div class="card-text">
+      <h2>Cargo at your Convenience</h2>
+      <p>Those times that you are in a
+location and you don’t know
+where to get cargo to transport
+are sorted. You can pick jobs
+enroute to your other pick up
+point or within your current
+location.</p>
+    </div>
+  </div>
+
+   <div class="card">
+
+    <div class="card-text">
+      <h2>Quick Jobs</h2>
+      <p>
+Whenever you are in the mood
+for quick jobs within certain
+locations can now be possible.
+Just log on to the jobs
+dashboard and get busy.
+
+location.</p>
+    </div>
+  </div>
+
+
+
+
+</div>
+
+
+
+
+</section>
+
+
+
+<div class="reg-process">
+  <div class="content">
+    <h2>Registration Process</h2>
+    <p>Click on sign up button at the top right of our website or at the bottom of this page. Then scan and attach
+the following documents to our transporters’ sign up form that will pop up:</p>
+    <ul>
+      <li><img src="/static/assets/images/icons/logbook.png" alt="Image 1"> Vehicle Logbook
+</li>
+      <li><img src="/static/assets/images/icons/certificate.png" alt="/static/assets/images/icons/certificate.png"> Vehicle Insurance Certificate</li>
+      <li><img src="/static/assets/images/icons/companydoc.png" alt="/static/assets/images/icons/companydoc.png">Owner’s ID / Company Reg Copy
+</li>
+         <li><img src="/static/assets/images/icons/identity.png" alt="/static/assets/images/icons/identity.png"> Driver’s ID Copy
+</li>
+      <li><img src="/static/assets/images/icons/license.png" alt="/static/assets/images/icons/license.png"> Driver’s Licence</li>
+   
+    </ul>
+  </div>
+</div>
+
+
+<div class="further-detail">
+  <div class="news">
+    <h3>Transporter Payment:</h3>
+    <p>
+We submit payments to owners at the end of every day. Once a job has been confirmed as completed, we
+begin the payment process to the transporter. Payment is sent to Mpesa number or Bank account number
+that is provided during registration / sign up.</p>
+  </div>
+
+   <div class="news">
+    <h3>Commissions:</h3>
+    <p>
+Treaville Edge charges 10% commission for every job that is done through our platform. We do not have
+any other additional or hidden charge.</p>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- ======= Footer ======= -->
+
+<!--=======================Popups Section==================================-->
+
+
+
+
+
+
+
+
+<!--__________________________________________________________-->
+
+
+
+
+
+
+<div id="cookie-alert">
+  <p>This website uses cookies to ensure you get the best experience on our website. By continuing to use our site, you agree to our <a href="privacypolicy.html">cookie policy.</a></p>
+  <button id="accept-cookies">Accept</button>
+  <button id="reject-cookies">Reject</button>
+</div>
+
+
+<!--End Popups -->
+
+
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact" id="footer-logo">
+        <a href="home.html" class="logo"><img src="/static/assets/img/logonoBG.png" alt="" class="img-fluid"></a>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="login.html">SignUp</a></li>
+                 <li><i class="bx bx-chevron-right"></i> <a href="#">Rate Calculator</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Help and FAQs</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Partner with us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="privacypolicy.html">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+             <li><i class="bx bx-chevron-right"></i> <a href="404.html">Cargo transportation</a></li>           
+              <li><i class="bx bx-chevron-right"></i> <a href="404.html">Courier and logistics</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="404.html">Office Relocation</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">House moving</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Tour vans and buses</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Construction vehicles</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Subscribe to our newsletter to receive updates from us. Subscription is free, no advertisements.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Trevy's Edge</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+        By <a href="https://cpyder.net/">:  CpyderWeb</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/assets/vendor/php-email-form/validate.js"></script>
+  <script src="/static/assets/vendor/purecounter/purecounter.js"></script>
+  <script src="/static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/static/assets/js/main.js"></script>
+
+</body>
+
+
+
+</html>
+
+   </body>
+   <html> 

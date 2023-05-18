@@ -1,0 +1,51 @@
+
+  
+  <link href="/static/assets/css/login_style.css" rel="stylesheet">
+	<h1 style="margin-bottom:20px;color:#122c9a">Client Signup</h1>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="/clientsignup" method="post">
+			<h1>Create Account</h1>
+			{{ Cform.hidden_tag() }}
+			{{Cform.full_name(placeholder="Name of Client (Full Name)") }}
+			{{Cform.company_name(placeholder="Company Name") }}
+			{{Cform.id_number(placeholder="ID Number (Attach ID / Business Registration Cert)")}}
+			{{Cform.email(placeholder="Email Address (Login ID)") }}
+			{{Cform.aop(placeholder="Area of Operation") }}
+			{{Cform.city (placeholder="City") }}
+			{{Cform.password(placeholder="Login Password") }}
+			{{Cform.mobile_number(placeholder="Mobile Number") }}
+			{{Cform.alt_mobile_number(placeholder="Alternative Number") }}
+			{{ Cform.submit }}
+
+			<a href="transporter.html">I am a Transporter</a>
+			
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="/login" method="post">
+			{{ Lform.hidden_tag() }}
+			<h1>Sign in</h1>
+			{{ Lform.email(placeholder='email') }}
+			{{ Lform.password(placeholder='Password') }}
+			{{ Lform.submit }}
+			<a href="#">Forgot your password?</a>
+			<a href="transporterdashboard.html">{{ Lform.Submit(id='sign-in') }}</a>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back To Trevy's Edge</h1>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<p>Enter your details and continue the journey with us</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="/static/assets/js/main3.js"></script>
+</body>
+</html>

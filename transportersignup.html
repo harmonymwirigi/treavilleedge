@@ -40,6 +40,39 @@
 			grid-template-columns: 1fr;
 		}
 	}
+	@media screen and (max-width: 768px) {
+		.container {
+			grid-template-columns: 1fr;
+			max-width: 100%;
+		}
+
+		input,
+		select {
+			width: calc(100% - 20px);
+		}
+	}
+
+
+	@media screen and (max-width: 768px) {
+		.container {
+			grid-template-columns: 1fr;
+			max-width: 100%;
+		}
+
+		input,
+		select {
+			width: calc(100% - 20px);
+		}
+
+		.container,
+		.form-container {
+			height: auto;
+		}
+
+		.overlay {
+			min-height: 380px;
+		}
+	}
 </style>
   
   <link href="assets/css/login_style.css" rel="stylesheet">

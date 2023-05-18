@@ -1,5 +1,5 @@
 <form action="#">
-    <h1>registervehicle</h1>
+    <h1>register vehicle</h1>
 <input type="text" name="paymentdetails" placeholder="Payment Account Details (Mpesa No / Bank Account No)"required>
 		<input type="text" name="accountname" placeholder="Account Name"required>
 		<input type="text" name="bankmpesa" placeholder="Bank and Branch / Mpesa"required>

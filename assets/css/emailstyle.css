@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Header Styles */
+  .header {
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  .logo {
+    display: block;
+    max-width: 200px;
+    height: auto;
+  }
+  
+  /* Container Styles */
+  .container {
+    padding: 20px;
+  }
+  
+ 
+  /* Reply Button Styles */
+  .reply-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #003bdda4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  .footer-logo {
+    display: block;
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .footer-columns {
+    display: flex;
+  }
+  
+  .footer-column {
+    flex: 1;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .footer-columns {
+      flex-direction: column;
+    }
+
+    .email-container {
+margin: 60px;
+      }
+
+}
+
+
+      
+
+    .actions a{
+        width: 100px;
+    }
+
+ 
+  .container {
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  .header {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .attachment {
+    margin-top: 10px;
+  }
+  .actions {
+    margin-top: 20px;
+    display: flex;
+align-items: center;
+  }
+  .actions a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+
+}
+
+.archive-button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff78b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    width: 100%;
+    text-align: center;
+}
+
+.forward-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8bff9a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    width: 100%;
+    text-align: center;
+}
+
+.delete-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff3737;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    width: 100%;
+    text-align: center;
+}
+
+.banner{ background: url(../img/illustrations/vehicles-146444.svg) rgb(0, 90, 224);
+ background-repeat: no-repeat;
+background-size: 100%;}
+
+h2 {
+    font-family: 'GT Walsheim', sans-serif;
+  }

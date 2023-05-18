@@ -19,6 +19,12 @@ document.querySelector(".list").addEventListener("click", function () {
 });
 
 var modeSwitch = document.querySelector('.mode-switch');
-modeSwitch.addEventListener('click', function () {                      document.documentElement.classList.toggle('light');
+modeSwitch.addEventListener('click', function () {                      
+  document.documentElement.classList.toggle('light');
  modeSwitch.classList.toggle('active');
 });
+
+const fullName = document.getElementById('fullName').textContent;
+const intials = fullName.split(' ').map(name => name[0]).join('').toUpperCase();
+document.getElementById('profileImage').innerHTML = intials;
+

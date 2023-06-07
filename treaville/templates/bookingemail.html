@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Email Template</title>
+   <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>{{data.title}}</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  <link href="/static/assets/img/favicon.png" rel="icon">
+  <link href="/static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link href="/static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+  <link href="/static/assets/css/emailstyle.css" rel="stylesheet">
+</head>
+<body>
+  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+      <td align="center" class="banner" >
+        <table cellpadding="0" cellspacing="0" border="0" width="600">
+          <tr>
+            <td align="center" valign="top" style="padding: 20px;">
+              <img src="/static/assets/img/logonoBG.png" alt="Logo" width="200" style="display: block; max-width: 100%;">
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" bgcolor="#f9f9f9">
+        <table cellpadding="0" cellspacing="0" border="0" width="600">
+          <tr>
+            <td valign="top" style="padding: 20px;">
+              
+<div class="container">
+    <div class="header">
+
+    <h2>{{data.title}}</h2>
+
+        <h5>{{data.body}}</h5>
+             <strong>Name:</strong> {{data.name}}<br>
+             <strong>Email:</strong>{{data.email}} <br>
+             <strong>Phone Number:</strong> {{data.phone_numer}} <br>
+             <strong>Company Name:</strong> {{data.service_id }} <br>
+
+<hr>
+
+           <h5>Service details</h5>
+                <strong>Service ID:</strong>{{data.my_id}} <br>
+                <strong>Service:</strong> Cargo Transportation<br>
+                <strong>Cargo Type:</strong>{{data.cargo_type}} <br>  
+                <strong>Height:</strong> N/A<br>
+                <strong>Width:</strong>{{data.width}} <br>
+                <strong>Length:</strong> N/A<br>
+                <strong>Volume:</strong>{{data.volume}} <br>
+                <strong>No.Of Passengers</strong> N/A<br>
+                <strong>Vehicle:</strong>{{data.vehicle}} <br>
+                <strong>Pickup Location:</strong>{{data.pickup}} <br>
+                <strong>Destination:</strong>{{data.destination}} <br>
+                <strong>Construction Site:</strong>N/A <br>
+                <strong>Offer amount:</strong> {{data.offer_amount}} <br>
+                <strong>Time:</strong>{{data.time}} <br>
+
+    </div>
+
+    <div class="body">
+     
+    
+    </div>
+
+ 
+
+    <div class="actions">
+         <a class="reply-button" href="mailto:example@example.com">Reply</a>
+            
+    </div>
+  </div>
+
+
+
+
+          
+              
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" bgcolor="#f1f1f1">
+        <table cellpadding="0" cellspacing="0" border="0" width="600">
+          <tr>
+            <td valign="top" style="padding: 20px;">
+              <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                  <td width="50%" style="padding-right: 10px;">
+                    <img src="/static/assets/img/logonoBG.png" alt="Footer Logo" width="100" style="display: block; max-width: 100%;">
+                  </td>
+                  <td width="50%" style="padding-left: 10px;">
+                    <p> </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

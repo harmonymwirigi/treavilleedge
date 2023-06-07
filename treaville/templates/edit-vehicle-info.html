@@ -1,0 +1,582 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+
+<head>
+<meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>TrevysEdge</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  <link href="/static/asses/img/favicon.png" rel="icon">
+  <link href="/static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+     <link rel="stylesheet" href="/static/lcss/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Bootstrap CSS
+		============================================ -->
+    <link rel="stylesheet" href="/static/lcss/font-awesome.min.css">
+    <!-- owl.carousel CSS
+		============================================ -->
+    <link rel="stylesheet" href="/static/lcss/owl.carousel.css">
+    <link rel="stylesheet" href="/static/lcss/owl.theme.css">
+    <link rel="stylesheet" href="/static/lcss/owl.transitions.css">
+    <!-- animate CSS
+		============================================ -->
+    <link rel="stylesheet" href="/static/lcss/animate.css">
+    <!-- normalize CSS
+		============================================ -->
+    <link rel="stylesheet" href="/static/lcss/normalize.css">
+    <!-- meanmenu icon CSS
+		============================================ -->
+    <link rel="stylesheet" href="/static/lcss/meanmenu.min.css">
+    <!-- main CSS
+		============================================ -->
+
+    <!-- educate icon CSS
+		============================================ -->
+    <link rel="stylesheet" href="/static/lcss/educate-custon-icon.css">
+    <!-- morrisjs CSS
+		============================================ -->
+    <link rel="stylesheet" href="/static/lcss/morrisjs/morris.css">
+    <!-- mCustomScrollbar CSS
+		============================================ -->
+    <link rel="stylesheet" href="/static/lcss/scrollbar/jquery.mCustomScrollbar.min.css">
+    <!-- metisMenu CSS
+		============================================ -->
+    <link rel="stylesheet" href="/static/lcss/metisMenu/metisMenu.min.css">
+    <link rel="stylesheet" href="/static/lcss/metisMenu/metisMenu-vertical.css">
+    <!-- calendar CSS
+		============================================ -->
+    <link rel="stylesheet" href="/static/css/calendar/fullcalendar.min.css">
+    <link rel="stylesheet" href="/static/css/calendar/fullcalendar.print.min.css">
+    <!-- style CSS
+		============================================ -->
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- responsive CSS
+		============================================ -->
+    <link rel="stylesheet" href="/static/lcss/responsive.css">
+    <!-- modernizr JS
+		============================================ -->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+
+<style>
+
+</style>
+
+</head>
+
+<body>
+
+ 
+
+<script> 
+$('#table1-link').on('click', function() {
+  $('#all-jobs').show();
+  $('#jobs-in-progress, #completed-jobs').hide();
+});
+
+$('#table2-link').on('click', function() {
+  $('#jobs-in-progress').show();
+  $('#all-jobs, #completed-jobs').hide();
+});
+
+$('#table3-link').on('click',function() {
+  $('#completed-jobs').show();
+  $('#all-jobs, #jobs-in-progress').hide();
+  });
+
+</script>
+
+ <!--sidebar-->
+  
+
+         <!--sidebar-->
+   <div class="left-sidebar-pro">
+    <nav id="sidebar" class="">
+        <div class="sidebar-header">
+            <a href="index.html"><img class="main-logo" src="../static/assets/img/logonoBG.png" style="width:50px; height:40px;" alt="" />Trevy's Edge</a>
+           <br> <strong><a href="#"><img src="" alt="" /> Vehicle information</a></strong>
+        </div>
+        <div class="left-custom-menu-adp-wrap comment-scrollbar">
+            <nav class="sidebar-nav left-sidebar-menu-pro">
+                <ul class="metismenu" id="menu1">
+                  
+                    
+                    <li class="active">
+                        <a class="has-arrow" href="all-jobs.html" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap"></span> <span class="mini-click-non">Jobs</span></a>
+                        <ul class="submenu-angle" aria-expanded="false">
+                          <li><a title="" href="{{url_for('dashboard')}}" id="table1-link"><span class="mini-sub-pro">All Jobs</span></a></li>
+                            <li><a title="" href="{{url_for('dashboard')}}"><span class="mini-sub-pro" id="table2-link">Jobs in progress</span></a></li>
+                            <li><a title="" href="{{url_for('dashboard')}}"><span class="mini-sub-pro" id="table3-link">Completed jobs</span></a></li>
+                            
+                            
+                        </ul>
+                    </li>
+                    
+                   
+                    
+                   
+                    <li>
+                        <a class="has-arrow" href="" aria-expanded="false"><span class="educate-icon educate-message icon-wrap"></span> <span class="mini-click-non">Messages</span></a>
+                        <ul class="submenu-angle" aria-expanded="false">
+                            <li><a title="Inbox" href="index.html"><span class="mini-sub-pro">Inbox</span></a></li>
+                            <li><a title="View Mail" href="index.html"><span class="mini-sub-pro">Notifications</span></a></li>
+                            <li><a title="Compose Mail" href="index.html"><span class="mini-sub-pro">Alerts</span></a></li>
+                        </ul>
+                    </li>
+                    
+                    
+                   
+                    
+                    
+                    <li >
+                        <a class="has-arrow" href="#" aria-expanded="false"><span class="educate-icon educate-pages icon-wrap"></span> <span class="mini-click-non">Profile</span></a>
+                        <ul class="submenu-angle page-mini-nb-dp" aria-expanded="false">
+                                 <li><a title="" href="index.html"><span class="mini-sub-pro">Personal Details</span></a></li>
+                            <li><a href="#" class="active"><span class="mini-sub-pro">Vehicle Details</span></a></li>
+                            <li><a title="" href="#"><span class="mini-sub-pro">Edit profile</span></a></li>
+                            <li><a title="Login" href="{{url_for('logout')}}"><span class="mini-sub-pro">Log Out</span></a></li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </nav>
+</div>
+   <!-- Sidebar End-->
+ <!--Mobile Start------------------------------------>
+ <div class="mobile-menu-area">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="mobile-menu">
+                  <nav id="dropdown">
+                      <ul class="mobile-menu-nav">
+                          <li><a data-toggle="" data-target="#Charts" href="#">Home <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                              <ul class="collapse dropdown-header-top">
+                                  <li><a href="index.php">Dashboard</a></li>
+                                 
+                              </ul>
+                          </li>                                    
+                          <li><a data-toggle="collapse" data-target="#demoevent" href="#">Jobs <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                              <ul id="demoevent" class="collapse dropdown-header-top">
+                                <li><a title="" href="#" id="table1-link"><span class="mini-sub-pro">All Jobs</span></a></li>
+                  <li><a title="" href="#"><span class="mini-sub-pro" id="table1-link">Jobs in progress</span></a></li>
+                  <li><a title="" href="#"><span class="mini-sub-pro" id="table2-link">Completed jobs</span></a></li>
+                  <li><a title="" href="#"><span class="mini-sub-pro" id="table3-link">Construction Jobs</span></a></li>
+                              </ul>
+                          </li>
+                          
+                          <li><a data-toggle="collapse" data-target="#democrou" href="#">Messages<span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                              <ul id="democrou" class="collapse dropdown-header-top">
+                     <li><a title="Inbox" href="#"><span class="mini-sub-pro">Inbox</span></a></li>
+                  <li><a title="View Mail" href="#"><span class="mini-sub-pro">Notifications</span></a></li>
+                  <li><a title="Compose Mail" href="#"><span class="mini-sub-pro">Alerts</span></a></li>
+                                 
+                              </ul>
+                          </li>
+                        
+                          <li><a data-toggle="collapse" data-target="#demodepart" href="#">Profile<span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                              <ul id="demodepart" class="collapse dropdown-header-top">
+                              <li><a title="" href=""><span class="mini-sub-pro">Personal Details</span></a></li>
+                  <li><a title="" href="{{url_for('vehicles')}}" ><span class="mini-sub-pro">Vehicle Details</span></a></li>
+                  <li><a title="" href="#"><span class="mini-sub-pro">Edit profile</span></a></li>
+                  <li><a title="Login" href="{{url_for('logout')}}"><span class="mini-sub-pro">Log Out</span></a></li>
+                  
+                              </ul>
+                          </li> 
+                          
+                        
+                
+                                                              
+                                                              
+                         
+                         
+                          
+                      </ul>
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+ <!---------------------------------------Mobile End-->
+
+        
+  
+
+   <!-- Sidebar End-->
+ 
+<!----Nav Start---------------------------------------------->
+
+ <div class="all-content-wrapper">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="logo-pro">
+                    <a href="index.php"><img class="main-logo" src="../static/assets/img/logonoBG.png" alt="" style="width:50px; height:40px;" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-advance-area">
+        <div class="header-top-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="header-top-wraper">
+                            <div class="row">
+                                <div class="col-lg-1 col-md-0 col-sm-1 col-xs-12">
+                                    <div class="menu-switcher-pro">
+                                        <button type="button" id="sidebarCollapse" class="btn bar-button-pro header-drl-controller-btn btn-info navbar-btn">
+                                                <i class="educate-icon educate-nav"></i>
+                                            </button>
+                                    </div>
+                                </div>
+                              <!--  <div class="col-lg-6 col-md-7 col-sm-6 col-xs-12">
+                                    <div class="header-top-menu tabl-d-n">
+                                        <ul class="nav navbar-nav mai-top-nav">
+                                            <li class="nav-item"><a href="#" class="nav-link">Home</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-link">About</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-link">Services</a>
+                                            </li>
+                                            <li class="nav-item dropdown res-dis-nn">
+                                                <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">Project <span class="angle-down-topmenu"><i class="fa fa-angle-down"></i></span></a>
+                                                <div role="menu" class="dropdown-menu animated zoomIn">
+                                                    <a href="#" class="dropdown-item">Documentation</a>
+                                                    <a href="#" class="dropdown-item">Expert Backend</a>
+                                                    <a href="#" class="dropdown-item">Expert FrontEnd</a>
+                                                    <a href="#" class="dropdown-item">Contact Support</a>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-link">Support</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div> -->
+                                
+                                                        
+                                                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+ <!--------------------------------------------------------Nav End-->
+
+
+
+
+<!--------------Dashboard Section----------------------------------------->
+
+
+       
+            <div class="breadcome-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="breadcome-list">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="d-flex"  ><div id="profileImage"></div>
+                                   <span class="bread-blod" id="fullNames">{{current_user.full_name}}</span>
+                                            </div> 
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <ul class="breadcome-menu">
+                                            <li><a href="#">Home</a> <span class="bread-slash">/</span>
+                                            </li>
+                                            <li><span class="bread-blod">Edit Vehicle information</span>
+                                            </li>
+
+                                            
+                                        </ul>
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+<div class="table-container">
+  <table id="vehicle-info">
+    <thead>
+      <tr>
+        <th>Vehicle Type</th>
+        <th>Driver's Name</th>
+        <th>Driver's ID</th>
+        <th>Driver's Mobile Number</th>
+        <th>Alternative Mobile Number</th>
+        <th>Payment Details</th>
+        <th>Account Name</th>
+        <th>Bank/MPesa</th>
+               <th>Area of operation</th>
+                <th>Action</th>
+                   
+      </tr>
+    </thead>
+    <tbody>
+      {% for vehicle in vehicles %}
+      <tr>
+        <td>{{vehicle.vehicle_type}}</td>
+        <td>{{vehicle.driver_name}}</td>
+        <td>{{vehicle.driver_id }}</td>
+        <td>{{ vehicle.driver_no }}</td>
+        <td>{{ vehicle.alt_no }}</td>
+        <td>{{ vehicle.payment_account }}</td>
+        <td>{{ vehicle.account_name }}</td>
+        <td>{{ vehicle.band_branch_name }}</td>
+        <td>{{ vehicle.aop }}</td>
+        <td><button type="button" class="btn btn-primary btn-sm" onclick="openModal5()">Edit</button>
+          <button type="button" class="btn btn-danger btn-sm">Remove</button></td>
+      </tr>
+      {% endfor %}
+      
+    </tbody>
+  </table>
+</div>
+
+
+
+
+
+
+
+
+
+        <!--<div class="traffic-analysis-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="social-media-edu">
+                            <i class="fa fa-facebook"></i>
+                            <div class="social-edu-ctn">
+                                <h3>50k Likes</h3>
+                                <p>You main list growing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="social-media-edu twitter-cl res-mg-t-30 table-mg-t-pro-n">
+                            <i class="fa fa-twitter"></i>
+                            <div class="social-edu-ctn">
+                                <h3>30k followers</h3>
+                                <p>You main list growing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="social-media-edu linkedin-cl res-mg-t-30 res-tablet-mg-t-30 dk-res-t-pro-30">
+                            <i class="fa fa-linkedin"></i>
+                            <div class="social-edu-ctn">
+                                <h3>7k Connections</h3>
+                                <p>You main list growing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="social-media-edu youtube-cl res-mg-t-30 res-tablet-mg-t-30 dk-res-t-pro-30">
+                            <i class="fa fa-youtube"></i>
+                            <div class="social-edu-ctn">
+                                <h3>50k Subscribers</h3>
+                                <p>You main list growing</p>
+                                <p>/media/user/Crack</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        
+        </div>
+    
+<!--------------Dashboard Section Ends here----------------------------------------->
+
+        <!---Footer Start------------------------------------------------------->
+
+
+
+
+        <!---------------------------------------------Footer End------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+        <!--------------------Open Modal--------------------------------------------->
+        <div id="edit-vehicle-modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal5()">&times;</span> 
+
+    <h2 id="book-form-header" class="book-option-form">Edit vehicle Information</h2>
+    <br>
+
+    	<div >
+<form action="#">
+ 
+
+		<select name="vehicle-type">
+			<option value="">Vehicle Type:</option>
+			<option value="Motor Bike">Motor Bike</option>
+			<option value="Van">Van</option>
+			<option value="PickUp">PickUp</option>
+			<option value="Truck 3T">Truck 3T</option>
+			<option value="Truck 5T">Truck 5T</option>
+			<option value="Truck 7T">Truck 7T</option>
+			<option value="Truck 10T">Truck 10T</option>
+			<option value="Truck 15T">Truck 15T</option>
+			<option value="Trailer 28T">Trailer 28T</option>
+			<option value="Flat Bed">Flat Bed</option>
+			<option value="Tour Van">Tour Van</option>
+			<option value="Tour Landcruiser"></option>
+			<option value="Prado Landcruiser">Prado Landcruiser</option>
+<option value="Rav4 SUV">Rav4 SUV</option>
+<option value="Mini Bus">Mini Bus</option>
+<option value="Tipper Truck 20T">Tipper Truck 20T</option>
+<option value="Excavator">Excavator</option>
+<option value="Compactor">Compactor</option>
+<option value="Grader">Grader</option>
+<option value="Bulldozer">Bulldozer</option>
+<option value="Wheel Loaders">Wheel Loaders</option>
+<option value="Crane">Crane</option>
+<option value="Forklift">Forklift</option>
+</select>
+
+		<input type="text" name="drivername" placeholder="Driver’s Name">
+		<input type="text" name="driverid" placeholder="Driver’s ID Number"required>
+		<input type="text" name="drivermobile" placeholder="Driver’s Mobile Number" required>
+        <input type="text" name="alternativedrivermobile" placeholder="Alternative Mobile Number">
+		<input type="text" name="paymentdetails" placeholder="Payment Account Details (Mpesa No / Bank Account No)"required>
+		<input type="text" name="accountname" placeholder="Account Name"required>
+		<input type="text" name="bankmpesa" placeholder="Bank and Branch / Mpesa"required>        
+		<input type="text" name="area" placeholder="Area of Operation">
+		<input type="text" name="town" placeholder="Town">
+  
+  <div class="file-upload">
+     <label id="file-input-label" for="logbook-upload">Upload Logbook(Pdf only):</label>
+      <input type="file" id="file-upload" name="logbook-upload" accept=".pdf">
+  
+      <div class="success-message" id="success-message"></div>
+ </div>
+  <div class="file-upload">
+     <label id="file-input-label" for="license-upload">Upload License(Pdf or Image File):</label>
+      <input type="file" id="file-upload" name="license-upload" accept=".pdf, .png, .jpg, .jpeg">
+  
+      <div class="success-message" id="success-message"></div>
+ </div>
+
+	</div>
+<div>
+    <div class="form-message" id="form-message"></div>
+</div>
+   </form>
+ 
+   <input type="submit" value="Update">
+  </div>
+  
+</div>
+        <!--------------------Modal ends---------------------------------------------->
+        
+       
+  <script src="../static/assets/js/main.js">
+  
+  
+  
+  </script>
+
+  
+    <!-- jquery
+		============================================ -->
+    <script src="/static/ljs//vendor/jquery-1.12.4.min.js"></script>
+    <!-- bootstrap JS
+		============================================ -->
+    <script src="/static/ljs//bootstrap.min.js"></script>
+    <!-- wow JS
+		============================================ -->
+    <script src="/static/ljs//wow.min.js"></script>
+    <!-- price-slider JS
+		============================================ -->
+    <script src="/static/ljs//jquery-price-slider.js"></script>
+    <!-- meanmenu JS
+		============================================ -->
+    <script src="/static/ljs//jquery.meanmenu.js"></script>
+    <!-- owl.carousel JS
+		============================================ -->
+    <script src="/static/ljs//owl.carousel.min.js"></script>
+    <!-- sticky JS
+		============================================ -->
+    <script src="/static/ljs//jquery.sticky.js"></script>
+    <!-- scrollUp JS
+		============================================ -->
+    <script src="/static/ljs//jquery.scrollUp.min.js"></script>
+    <!-- counterup JS
+		============================================ -->
+    <script src="/static/ljs/counterup/jquery.counterup.min.js"></script>
+    <script src="/static/ljs//counterup/waypoints.min.js"></script>
+    <script src="/static/ljs//counterup/counterup-active.js"></script>
+    <!-- mCustomScrollbar JS
+		============================================ -->
+    <script src="/static/ljs//scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/static/ljs//scrollbar/mCustomScrollbar-active.js"></script>
+    <!-- metisMenu JS
+		============================================ -->
+    <script src="/static/ljs//metisMenu/metisMenu.min.js"></script>
+    <script src="/static/ljs/metisMenu/metisMenu-active.js"></script>
+    <!-- morrisjs JS
+		============================================ -->
+    <script src="/static/ljs/morrisjs/raphael-min.js"></script>
+    <script src="/static/ljs/morrisjs/morris.js"></script>
+    <script src="/static/ljs/morrisjs/morris-active.js"></script>
+    <!-- morrisjs JS
+		============================================ -->
+    <script src="/static/ljs/sparkline/jquery.sparkline.min.js"></script>
+    <script src="/static/ljs/sparkline/jquery.charts-sparkline.js"></script>
+    <script src="/static/ljs/sparkline/sparkline-active.js"></script>
+    <!-- calendar JS
+		============================================ -->
+    <script src="/static/ljs/calendar/moment.min.js"></script>
+    <script src="/static/ljs/calendar/fullcalendar.min.js"></script>
+    <script src="/static/ljs/calendar/fullcalendar-active.js"></script>
+    <!-- plugins JS
+		============================================ -->
+    <script src="/static/ljs/plugins.js"></script>
+    <!-- main JS
+		============================================ -->
+    <script src="/static/ljs/main.js"></script>
+    <!-- tawk chat JS
+		============================================ -->
+    <script src="/static/ljs/tawk-chat.js"></script>
+</body>
+
+</html>

@@ -444,6 +444,13 @@ function isFormValid() {
   function openModal4() {
     document.getElementById("register-vehicle-modal").style.display = "block";
   }
+<<<<<<< HEAD
+=======
+
+  function openModal5() {
+    document.getElementById("edit-vehicle-modal").style.display = "block";
+  }
+>>>>>>> 2d3333d2c22e629053fde6de0b1d75cdaa7f61c4
   
 
   function closeModal() {
@@ -455,6 +462,13 @@ function isFormValid() {
   function closeModal4() {
     document.getElementById("register-vehicle-modal").style.display = "none";
   }
+<<<<<<< HEAD
+=======
+
+  function closeModal5() {
+    document.getElementById("edit-vehicle-modal").style.display = "none";
+  }
+>>>>>>> 2d3333d2c22e629053fde6de0b1d75cdaa7f61c4
 
 
 
@@ -494,3 +508,11 @@ fileUpload.addEventListener('change', function() {
   successMessage.innerHTML = 'File uploaded successfully.';
 });
 
+<<<<<<< HEAD
+=======
+
+const fullNames = document.getElementById('fullName').textContent;
+const intials = fullNames.split(' ').map(name => name[0]).join('').toUpperCase();
+document.getElementById('profileImage').innerHTML = intials;
+
+>>>>>>> 2d3333d2c22e629053fde6de0b1d75cdaa7f61c4

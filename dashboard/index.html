@@ -118,6 +118,7 @@
                         <ul class="submenu-angle page-mini-nb-dp" aria-expanded="false">
                                  <li><a title="" href="#"><span class="mini-sub-pro">Personal Details</span></a></li>
                             <li><a title="" href="#"><span class="mini-sub-pro">Vehicle Details</span></a></li>
+                            <li><a href="edit-vehicle-info.html"><span class="mini-sub-pro">Vehicle Details</span></a></li>
                             <li><a title="" href="#"><span class="mini-sub-pro">Edit profile</span></a></li>
                             <li><a title="Login" href="#"><span class="mini-sub-pro">Log Out</span></a></li>
                             
@@ -164,7 +165,7 @@
                                     <li><a data-toggle="collapse" data-target="#demodepart" href="#">Profile<span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
                                         <ul id="demodepart" class="collapse dropdown-header-top">
                                         <li><a title="" href=""><span class="mini-sub-pro">Personal Details</span></a></li>
-                            <li><a title="" href="#"><span class="mini-sub-pro">Vehicle Details</span></a></li>
+                            <li><a href="edit-vehicle-info.html"><span class="mini-sub-pro">Vehicle Details</span></a></li>
                             <li><a title="" href="#"><span class="mini-sub-pro">Edit profile</span></a></li>
                             <li><a title="Login" href="#"><span class="mini-sub-pro">Log Out</span></a></li>
                             
@@ -287,6 +288,8 @@ $('#table3-link').on('click',function() {
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                   <button type="button" class="btn btn-primary btn-sm" onclick="openModal4()">Register vehicles</button>
+                                   <span class="bread-blod" id="fullNames"><b>Haley Maina</b></span>
+                                            
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                         <ul class="breadcome-menu">
@@ -296,6 +299,12 @@ $('#table3-link').on('click',function() {
                                             </li>
                                         </ul>
                                     </div>
+
+                                            
+                                        </ul>
+                                    </div>
+
+                                    
                                 </div>
                             </div>
                         </div>
@@ -317,7 +326,7 @@ $('#table3-link').on('click',function() {
         <th>Cargo Volume</th>
         <th>Vehicle Type</th>
         <th>Required Payable Amount</th>
-        <th>Start Date</th>
+        <th>Action</th>
       </tr>
     </thead>
     <tbody>
@@ -351,6 +360,10 @@ $('#table3-link').on('click',function() {
         <td>$3,000</td>
         <td>06/01/2023</td>
       </tr>
+        <td><button type="button" class="btn btn-primary btn-sm">Request</button>
+        <button type="button" class="btn btn-danger btn-sm">Remove</button></td>
+      </tr>
+      
     </tbody>
   </table>
 </div>
@@ -367,7 +380,7 @@ $('#table3-link').on('click',function() {
         <th>Cargo Volume</th>
         <th>Vehicle Type</th>
         <th>Required Payable Amount</th>
-        <th>Start Date</th>
+        <th>Action</th>
       </tr>
     </thead>
     <tbody>
@@ -379,11 +392,11 @@ $('#table3-link').on('click',function() {
         <td>50 cu ft</td>
         <td>Truck</td>
         <td>$2,500</td>
+<<<<<<< HEAD
         <td>05/01/2023</td>
-      </tr>
-      <tr>
+=======
+        <td><button type="button" class="btn btn-primary btn-sm">Mark Complete</button>
         <td>Chicago, IL</td>
-        <td>Miami, FL</td>
         <td>Apparel</td>
         <td>1,000 lbs</td>
         <td>100 cu ft</td>

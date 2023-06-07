@@ -486,6 +486,11 @@ height: 80px;
 
 
 }
+
+#landing-page img{
+filter:unset !important;
+}
+
 @media (max-width: 991px) {
   #hero .btn-get-started {
    height: 50px;
@@ -502,7 +507,10 @@ height: 80px;
     text-align: center;
   }
   #hero .hero-img img {
-    width: 30%;
+    width: 100% !important;
+    height: 400px !important;
+    filter:unset !important;
+    margin-top: 20px !important;
    
   }
 }
@@ -2186,4 +2194,12 @@ align-items: center;
   .service{
    -webkit-transition: all 400ms ease-in-out;
    transition: all 400ms ease-in-out;
+<<<<<<< HEAD
+=======
+  }
+
+
+  #landing-page{
+
+>>>>>>> 2d3333d2c22e629053fde6de0b1d75cdaa7f61c4
   }

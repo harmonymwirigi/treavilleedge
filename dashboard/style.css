@@ -4672,4 +4672,39 @@ div#sparklinehome canvas {
 .footer-copy-right a{
 	color:#fff;
 	text-decoration:none;
+<<<<<<< HEAD
 }
+=======
+}
+
+
+#fullNames{
+    border:#006DF0 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#profileImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #006DF0;
+    font-size: 35px;
+    color: #fff !important;
+    text-align: center;
+    line-height: 150px;
+    margin: 20px 0;
+  }
+
+
+  .d-flex{
+    display: flex;
+    align-items: center;
+  }
+  
+
+  .table-container{
+    margin: 0 20px 0 20px;
+  }
+>>>>>>> 2d3333d2c22e629053fde6de0b1d75cdaa7f61c4

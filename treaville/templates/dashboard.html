@@ -117,7 +117,7 @@
                         <a class="has-arrow" href="#" aria-expanded="false"><span class="educate-icon educate-pages icon-wrap"></span> <span class="mini-click-non">Profile</span></a>
                         <ul class="submenu-angle page-mini-nb-dp" aria-expanded="false">
                                  <li><a title="" href="#"><span class="mini-sub-pro">Personal Details</span></a></li>
-                            <li><a title="" href="#"><span class="mini-sub-pro">Vehicle Details</span></a></li>
+                            <li><a title="" href="{{url_for('vehicles')}}"><span class="mini-sub-pro">Vehicle Details</span></a></li>
                             <li><a title="" href="#"><span class="mini-sub-pro">Edit profile</span></a></li>
                             <li><a title="Login" href="{{url_for('logout')}}"><span class="mini-sub-pro">Log Out</span></a></li>
                             
@@ -164,9 +164,9 @@
                                     <li><a data-toggle="collapse" data-target="#demodepart" href="#">Profile<span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
                                         <ul id="demodepart" class="collapse dropdown-header-top">
                                         <li><a title="" href=""><span class="mini-sub-pro">Personal Details</span></a></li>
-                            <li><a title="" href="#"><span class="mini-sub-pro">Vehicle Details</span></a></li>
+                            <li><a title="" href="{{url_for('vehicles')}}" ><span class="mini-sub-pro">Vehicle Details</span></a></li>
                             <li><a title="" href="#"><span class="mini-sub-pro">Edit profile</span></a></li>
-                            <li><a title="Login" href="#"><span class="mini-sub-pro">Log Out</span></a></li>
+                            <li><a title="Login" href="{{url_for('logout')}}"><span class="mini-sub-pro">Log Out</span></a></li>
                             
                                         </ul>
                                     </li> 
@@ -287,6 +287,7 @@ $('#table3-link').on('click',function() {
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                   <button type="button" class="btn btn-primary btn-sm" onclick="openModal4()">Register vehicles</button>
+                                  <span class="bread-blod" id="fullNames"><b>{{current_user.full_name}}</b></span>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                         <ul class="breadcome-menu">
@@ -305,7 +306,7 @@ $('#table3-link').on('click',function() {
         </div>
         
 
-
+<h3>CARGO JOBS</h3>
 <div>
   <table id="all-jobs">
     <thead>
@@ -317,7 +318,7 @@ $('#table3-link').on('click',function() {
         <th>Cargo Volume</th>
         <th>Vehicle Type</th>
         <th>Required Payable Amount</th>
-        <th>Start Date</th>
+        <th>Action</th>
       </tr>
     </thead>
     <tbody>
@@ -332,7 +333,8 @@ $('#table3-link').on('click',function() {
             <td>{{jobc.cargo_volume}}</td>
             <td>{{jobc.vehicle_type}}</td>
             <td>{{jobc.offer_amount}}</td>
-            <td>no done</td>
+            <td><a type="button" class="btn btn-primary btn-sm" href="{{url_for('requesta', my_id = jobc.my_id)}}">Request</a>
+              <button type="button" class="btn btn-danger btn-sm">Remove</button></td>
           </tr>
         {% endfor%}
         {% endif %}
@@ -341,6 +343,73 @@ $('#table3-link').on('click',function() {
     </tbody>
   </table>
 </div>
+
+<h3>PASSENGER JOBS</h3>
+<div>
+  <table id="all-job s">
+    <thead>
+      <tr>
+        <th>Pick Up Location</th>
+        <th>Destination City</th>
+        <th>Vehicle Type</th>
+        <th>Number of passengers</th>
+        <th>Required Payable Amount</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+        
+          {% if jobpassenger %}
+          {% for jobp in jobpassenger %}
+          <tr>
+            <td>{{jobp.pickup_location}}</td>
+            <td>{{jobp.Destination}}</td>
+            <td>{{jobp.vehicle_type}}</td>
+            <td>{{jobp.no_of_passenger}}</td>
+            <td>{{jobp.offer_amount}}</td>
+            <td><a type="button" class="btn btn-primary btn-sm" href="{{url_for('requesta', my_id = jobp.my_id)}}">Request</a>
+              <button type="button" class="btn btn-danger btn-sm">Remove</button></td>
+          </tr>
+        {% endfor%}
+        {% endif %}
+      </tr>
+     
+    </tbody>
+  </table>
+</div>
+
+<h3>CONSTRUCTION JOBS</h3>
+<div>
+  <table id="all-job s">
+    <thead>
+      <tr>
+        <th>Pick Up Location</th>
+        <th>Vehicle Type</th>
+        <th>MOBILE NUMBER</th>
+        <th>Required Payable Amount</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+        
+          {% if jobconstruction %}
+          {% for jobp in jobconstruction %}
+          <tr>
+            <td>{{jobp.location}}</td>
+            <td>{{jobp.vehicle_type}}</td>
+            <td>{{jobp.mobile_number}}</td>
+            <td>{{jobp.offer_amount}}</td>
+            <td><a type="button" class="btn btn-primary btn-sm" href="{{url_for('requesta', my_id = jobp.my_id)}}">Request</a>
+              <button type="button" class="btn btn-danger btn-sm">Remove</button></td>
+          </tr>
+        {% endfor%}
+        {% endif %}
+      </tr>
+     
+    </tbody>
+  </table>
+</div>
+
 
 
 <div>

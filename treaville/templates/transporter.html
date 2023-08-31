@@ -89,16 +89,16 @@ p{
 
           <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="aboutus.html">Our Story</a></li>    
-                     <li><a href="aboutus.html">Core Values</a></li> 
-                       <li><a href="aboutus.html">Partnership</a></li>                      
+              <li><a href="{{url_for("main.aboutus")}}">Our Story</a></li>    
+                     <li><a href="{{url_for("main.aboutus")}}">Core Values</a></li> 
+                       <li><a href="{{url_for("main.aboutus")}}">Partnership</a></li>                      
               <li><a href="#">Help and FAQs</a></li>
               <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
             </ul>
           </li>
       
-          <li><a class="getstarted scrollto" href="{{url_for('transportersignup')}}">Login</a></li>
-          <li><a class="getstarted scrollto"  href="{{url_for('transportersignup')}}">Sign up</a></li>
+          <li><a class="getstarted scrollto" href="{{url_for('transpot.transportersignup')}}">Login</a></li>
+          <li><a class="getstarted scrollto"  href="{{url_for('transpot.transportersignup')}}">Sign up</a></li>
         
         </ul>
         <i class="bi bi-list mobile-nav-toggle" id="nav-toggler"></i>
@@ -123,7 +123,7 @@ touch of a button. Sign up with us to increase your pick up jobs at
 various locations - Let’s get busy!
 <br><a style="text-decoration:underline" href="services.html">Learn more</a></h6>
           <div class="d-flex">
-            <a href="transporter.html" class="btn-get-started" id="book-btn">Get Started</a>
+            <a href="{{url_for('transpot.transportersignup')}}" class="btn-get-started" id="book-btn">Get Started</a>
           
           </div>
         </div>
@@ -161,7 +161,7 @@ dispatch message with the clients contact and location. Once the job is complete
 the same day.
 
           </p>
-          <a class="cta-btn" href="transportersignup.html">SIGN UP</a>
+          <a class="cta-btn" href="{{url_for('transpot.transportersignup')}}">SIGN UP</a>
         </div>
 
       </div>
@@ -482,7 +482,7 @@ any other additional or hidden charge.</p>
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="login.html">SignUp</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{url_for('transpot.transportersignup')}}">SignUp</a></li>
                  <li><i class="bx bx-chevron-right"></i> <a href="#">Rate Calculator</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Help and FAQs</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>

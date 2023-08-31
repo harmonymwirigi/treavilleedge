@@ -112,9 +112,9 @@ $('#table3-link').on('click',function() {
                     <li class="active">
                         <a class="has-arrow" href="all-jobs.html" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap"></span> <span class="mini-click-non">Jobs</span></a>
                         <ul class="submenu-angle" aria-expanded="false">
-                          <li><a title="" href="{{url_for('dashboard')}}" id="table1-link"><span class="mini-sub-pro">All Jobs</span></a></li>
-                            <li><a title="" href="{{url_for('dashboard')}}"><span class="mini-sub-pro" id="table2-link">Jobs in progress</span></a></li>
-                            <li><a title="" href="{{url_for('dashboard')}}"><span class="mini-sub-pro" id="table3-link">Completed jobs</span></a></li>
+                          <li><a title="" href="{{url_for('transpot.dashboard')}}" id="table1-link"><span class="mini-sub-pro">All Jobs</span></a></li>
+                            <li><a title="" href="{{url_for('transpot.dashboard')}}"><span class="mini-sub-pro" id="table2-link">Jobs in progress</span></a></li>
+                            <li><a title="" href="{{url_for('transpot.dashboard')}}"><span class="mini-sub-pro" id="table3-link">Completed jobs</span></a></li>
                             
                             
                         </ul>
@@ -142,7 +142,7 @@ $('#table3-link').on('click',function() {
                                  <li><a title="" href="index.html"><span class="mini-sub-pro">Personal Details</span></a></li>
                             <li><a href="#" class="active"><span class="mini-sub-pro">Vehicle Details</span></a></li>
                             <li><a title="" href="#"><span class="mini-sub-pro">Edit profile</span></a></li>
-                            <li><a title="Login" href="{{url_for('logout')}}"><span class="mini-sub-pro">Log Out</span></a></li>
+                            <li><a title="Login" href="{{url_for('transpot.logout')}}"><span class="mini-sub-pro">Log Out</span></a></li>
                             
                         </ul>
                     </li>
@@ -187,9 +187,9 @@ $('#table3-link').on('click',function() {
                           <li><a data-toggle="collapse" data-target="#demodepart" href="#">Profile<span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
                               <ul id="demodepart" class="collapse dropdown-header-top">
                               <li><a title="" href=""><span class="mini-sub-pro">Personal Details</span></a></li>
-                  <li><a title="" href="{{url_for('vehicles')}}" ><span class="mini-sub-pro">Vehicle Details</span></a></li>
+                  <li><a title="" href="{{url_for('vehicless.vehicles')}}" ><span class="mini-sub-pro">Vehicle Details</span></a></li>
                   <li><a title="" href="#"><span class="mini-sub-pro">Edit profile</span></a></li>
-                  <li><a title="Login" href="{{url_for('logout')}}"><span class="mini-sub-pro">Log Out</span></a></li>
+                  <li><a title="Login" href="{{url_for('transpot.logout')}}"><span class="mini-sub-pro">Log Out</span></a></li>
                   
                               </ul>
                           </li> 

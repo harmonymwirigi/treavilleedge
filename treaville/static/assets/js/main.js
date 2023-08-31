@@ -444,6 +444,10 @@ function isFormValid() {
   function openModal4() {
     document.getElementById("register-vehicle-modal").style.display = "block";
   }
+
+  function openModal5() {
+    document.getElementById("edit-vehicle-modal").style.display = "block";
+  }
   
 
   function closeModal() {
@@ -454,6 +458,10 @@ function isFormValid() {
   }
   function closeModal4() {
     document.getElementById("register-vehicle-modal").style.display = "none";
+  }
+
+  function closeModal5() {
+    document.getElementById("edit-vehicle-modal").style.display = "none";
   }
 
 
@@ -493,4 +501,9 @@ fileUpload.addEventListener('change', function() {
   }
   successMessage.innerHTML = 'File uploaded successfully.';
 });
+
+
+const fullNames = document.getElementById('fullName').textContent;
+const intials = fullNames.split(' ').map(name => name[0]).join('').toUpperCase();
+document.getElementById('profileImage').innerHTML = intials;
 
